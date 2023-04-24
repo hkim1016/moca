@@ -3,16 +3,12 @@ import { Group } from "three";
 import { createMeshes } from "./meshes";
 
 class Museum extends Group {
-    constructor() {
+    constructor(renderer) {
         super();
 
-        // this.artPieces = new ArtPieces();
-
-        this.meshes = createMeshes();
+        this.meshes = createMeshes(renderer);
 
         this.add(
-            // this.artPieces,
-            // this.meshes.rightWall,
             this.meshes.grpWall01,
             this.meshes.grpWall02,
             this.meshes.grpWall03,

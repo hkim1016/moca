@@ -5,7 +5,7 @@ import { createMeshes as createArtPieces } from '../ArtPiece/meshes';
 import { createGeometry } from "./geometry";
 import { createMaterial } from "./material";
 
-function createMeshes() {
+function createMeshes(renderer) {
     const artPieces = createArtPieces();
     const {
         art02,
@@ -134,6 +134,7 @@ function createMeshes() {
     floorTexture.wrapS = RepeatWrapping;
     floorTexture.wrapT = RepeatWrapping;
     floorTexture.repeat.set(500, 500);
+    renderer.initTexture(floorTexture);
     const floor = new Mesh(new PlaneGeometry(1000, 1000, 10, 10), new MeshStandardMaterial({color: 'white', map: floorTexture}));
     floor.rotation.x = -Math.PI / 2;
 
