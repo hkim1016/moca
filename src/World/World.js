@@ -41,6 +41,7 @@ class World {
         // scene.add(ambientLight, helper, gridHelper, axesHelper, artPieces);
         scene.add(ambientLight, museum);
 
+        renderer.compile(scene, camera);
         const resizer = new Resizer(canvas, camera, renderer);
         // resizer.onResize = () => {
         //     this.render();
