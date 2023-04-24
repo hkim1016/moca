@@ -14,48 +14,48 @@ function createMeshes() {
     // art04.position.set(0, 0.75, 0);
 
     const art05 = new Mesh(createGeometry(2.8, 1.2), createMaterial('/assets/textures/5.png'));
-    art05.position.set(0, 0.6, 0);
+    // art05.position.set(0, 0.6, 0);
 
     const art06 = new Mesh(createGeometry(1.8, 1.6), createMaterial('/assets/textures/6.png'));
-    art06.position.set(0, 0.8, 0);
+    // art06.position.set(0, 0.8, 0);
 
     const art07 = new Mesh(createGeometry(4, 1), createMaterial('/assets/textures/7.png'));
-    art07.position.set(0, 0.5);
+    // art07.position.set(0, 0.5);
 
     const art08 = new Mesh(createGeometry(4, 2), createMaterial('/assets/textures/8.png'));
-    art08.position.set(0, 1);
+    // art08.position.set(0, 1);
 
     const art09 = new Mesh(createGeometry(3, 2.4), createMaterial('/assets/textures/9.png'));
-    art09.position.set(0, 1.2, 0);
+    // art09.position.set(0, 1.2, 0);
 
     const art10 = new Mesh(createGeometry(3, 3), createMaterial('/assets/textures/10.png'));
-    art10.position.set(0, 1.5, 0);
+    // art10.position.set(0, 1.5, 0);
 
     const art11 = new Mesh(createGeometry(2.5, 3), createMaterial('/assets/textures/11.png'));
-    art11.position.set(0, 1.5, 0);
+    // art11.position.set(0, 1.5, 0);
 
     const art12 = new Mesh(createGeometry(1.7, 2), createMaterial('/assets/textures/12.png'));
-    art12.position.set(0, 1, 0);
+    // art12.position.set(0, 1, 0);
 
     const art13 = new Mesh(createGeometry(2, 2.4), createMaterial('/assets/textures/13.png'));
-    art13.position.set(0, 1.2, 0);
+    // art13.position.set(0, 1.2, 0);
 
     // const art14 = new Mesh(createGeometry(2.8, 1.8), createMaterial('/assets/textures/14.png'));
 
     const art15 = new Mesh(createGeometry(2.2, 2.4), createMaterial('/assets/textures/15.png'));
-    art15.position.set(0, 1.2, 0);
+    // art15.position.set(0, 1.2, 0);
 
     const art16 = new Mesh(createGeometry(3.2, 2.4), createMaterial('/assets/textures/16.png'));
-    art16.position.set(0, 1.2, 0);
+    // art16.position.set(0, 1.2, 0);
 
     const art17 = new Mesh(createGeometry(1.8, 2.4), createMaterial('/assets/textures/17.png'));
-    art17.position.set(0, 1.2, 0);
+    // art17.position.set(0, 1.2, 0);
 
     const art18 = new Mesh(createGeometry(2.2, 2.4), createMaterial('/assets/textures/18.png'));
-    art18.position.set(0, 1.2, 0);
+    // art18.position.set(0, 1.2, 0);
 
     const art19 = new Mesh(createGeometry(3.8, 2.4), createMaterial('/assets/textures/19.png'));
-    art19.position.set(0, 0.7, 0);
+    // art19.position.set(0, 0.7, 0);
 
 
     return {

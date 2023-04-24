@@ -27,7 +27,9 @@ function createMeshes(renderer) {
         art19,
     } = artPieces;
 
-    const wall01 = new Mesh(createGeometry(0.5, 5, 26), createMaterial());
+    const wallMaterial = createMaterial();
+
+    const wall01 = new Mesh(createGeometry(0.5, 5, 26), wallMaterial);
     wall01.position.set(2.25, 2.5, -6);
 
     art02.rotation.y = -Math.PI / 2;
@@ -51,7 +53,7 @@ function createMeshes(renderer) {
     const grpWall01 = new Group();
     grpWall01.add(wall01, art02, art03, art04, art17, art07, art08);
 
-    const wall02 = new Mesh(createGeometry(0.5, 5, 10), createMaterial());
+    const wall02 = new Mesh(createGeometry(0.5, 5, 10), wallMaterial);
     wall02.position.set(-2.25, 2.5, 2);
 
     art05.rotation.y = Math.PI / 2;
@@ -63,7 +65,7 @@ function createMeshes(renderer) {
     const grpWall02 = new Group();
     grpWall02.add(wall02, art05, art06);
 
-    const wall03 = new Mesh(createGeometry(8, 5, 0.5), createMaterial());
+    const wall03 = new Mesh(createGeometry(8, 5, 0.5), wallMaterial);
     wall03.position.set(-6.5, 2.5, -2.75);
 
     art09.rotation.y = Math.PI;
@@ -72,7 +74,7 @@ function createMeshes(renderer) {
     const grpWall03 = new Group();
     grpWall03.add(wall03, art09);
 
-    const wall04 = new Mesh(createGeometry(0.5, 5, 16), createMaterial());
+    const wall04 = new Mesh(createGeometry(0.5, 5, 16), wallMaterial);
     wall04.position.set(-10.5, 2.5, -10.5);
 
     art10.rotation.y = Math.PI / 2;
@@ -87,10 +89,10 @@ function createMeshes(renderer) {
     const grpWall04 = new Group();
     grpWall04.add(wall04, art10, art11, art19);
 
-    const wall05 = new Mesh(createGeometry(3.5, 5, 0.5), createMaterial());
+    const wall05 = new Mesh(createGeometry(3.5, 5, 0.5), wallMaterial);
     wall05.position.set(-9.25, 2.5, -18.75);
 
-    const wall06 = new Mesh(createGeometry(0.5, 5, 5), createMaterial());
+    const wall06 = new Mesh(createGeometry(0.5, 5, 5), wallMaterial);
     wall06.position.set(-7.25, 2.5, -21);
 
     art13.rotation.y = Math.PI / 2;
@@ -99,7 +101,7 @@ function createMeshes(renderer) {
     const grpWall06 = new Group();
     grpWall06.add(wall06, art13);
 
-    const wall07 = new Mesh(createGeometry(7, 5, 0.5), createMaterial());
+    const wall07 = new Mesh(createGeometry(7, 5, 0.5), wallMaterial);
     wall07.position.set(-4, 2.5, -23.75);
 
     art16.position.set(-4, 1.7, -23.24);
@@ -107,7 +109,7 @@ function createMeshes(renderer) {
     const grpWall07 = new Group();
     grpWall07.add(wall07, art16);
 
-    const wall08 = new Mesh(createGeometry(0.5, 5, 5), createMaterial());
+    const wall08 = new Mesh(createGeometry(0.5, 5, 5), wallMaterial);
     wall08.position.set(-0.75, 2.5, -21);
 
     art15.rotation.y = -Math.PI / 2;
@@ -116,10 +118,10 @@ function createMeshes(renderer) {
     const grpWall08 = new Group();
     grpWall08.add(wall08, art15);
 
-    const wall09 = new Mesh(createGeometry(2.5, 5, 0.5), createMaterial());
+    const wall09 = new Mesh(createGeometry(2.5, 5, 0.5), wallMaterial);
     wall09.position.set(0.75, 2.5, -18.75);
 
-    const middleWall = new Mesh(createGeometry(4, 5, 4), createMaterial());
+    const middleWall = new Mesh(createGeometry(4, 5, 4), wallMaterial);
     middleWall.position.set(-4, 2.5, -12);
 
     art12.position.set(-4, 1.5, -9.99);
