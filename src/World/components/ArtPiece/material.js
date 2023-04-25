@@ -1,8 +1,6 @@
 import { MeshStandardMaterial, TextureLoader } from "three";
 
-function createMaterial(texture) {
-    const textureLoader = new TextureLoader();
-
+function createMaterial(texture, textureLoader) {
     const artTexture = textureLoader.load(
         texture,
     );

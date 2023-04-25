@@ -137,7 +137,7 @@ function createMeshes(renderer) {
     floorTexture.wrapT = RepeatWrapping;
     floorTexture.repeat.set(500, 500);
     renderer.initTexture(floorTexture);
-    const floor = new Mesh(new PlaneGeometry(1000, 1000, 10, 10), new MeshStandardMaterial({color: 'white', map: floorTexture}));
+    const floor = new Mesh(new PlaneGeometry(500, 500, 10, 10), new MeshStandardMaterial({color: 'white', map: floorTexture}));
     floor.rotation.x = -Math.PI / 2;
 
     return {
